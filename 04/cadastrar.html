@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+
+    <form action="http://191.252.62.149:8080/pweb/salvar.jsp" method="post" >  
+
+        login: <br>
+        <input type="text" name="login"><br>
+
+        senha: <br>
+        <input type="password" maxlength="8" name="senha"><br>
+
+        Confirme a senha: <br>
+        <input type="password" maxlength="8" name="confirmasenha"><br>
+
+        Nome: <br>
+        <input type="text"  name="nome"><br>
+
+        Sexo: <br>
+        <input type="radio" value ="masculino" name="sexo"> Masculino<br>
+        <input type="radio" value ="feminino" name="sexo"> Feminino<br>
+       
+        Email: <br>
+        <input type="email" name="email"> <br>
+
+        Interesses: <br>
+        <input type="checkbox" value = "Raiden" name="interesses"> Raiden <br>
+        <input type="checkbox" value = "Kokomi" name="interesses"> Kokomi <br>
+        <input type="checkbox" value = "Kazuha" name="interesses"> Kazuha <br>
+        <input type="checkbox" value = "Hutao" name="interesses"> Hutao <br>
+        <input type="checkbox" value = "Yelan" name="interesses"> Yelan <br>
+        <input type="checkbox" value = "Arllechinno" name="interesses"> Arllechinno <br>
+
+        Estado: <br>
+        <select name="estado" >
+            <option selected > selecione o estado </option>
+            <option value="Piaui"name ="estado">Pi</option>
+            <option value="Bahia"name ="estado">BA</option>
+            <option value="São paulo"name ="estado">SP</option>
+            <option value="Rio de janeiro"name ="estado">RJ</option>
+            <option value="Maranhão"name ="estado">MR</option>
+        </select> <br> <br>
+
+        Observações: <br>
+        <label for="Observações" nome = observacao></label>
+        <textarea name="observacao" rows="4" cols="50"></textarea>
+        <br>
+        <input type="submit" value="Enviar" >
+        <a href="formulario.html">Voltar para área de login</a><br>
+    </form>
+</body>
+</html>
+<style type="text/css">
+    body {  		
+   background-color: #e0ffff;  	
+}    
+ 
